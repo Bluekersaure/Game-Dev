@@ -1,0 +1,28 @@
+T1a05-Javascript-Michael
+<h2 align=center> Javascript by Michael</h2>
+
+Enter what kind of mood you are in right now <input id="myText01" type=text placeholder="Okay">
+
+<div id="myDiv01" style="font-size:40px;color:blue;">....</div>
+
+<input type=button value="Click here" onClick="{
+  
+  if (document.getElementById('myText01').value == '') {alert('enter a feeling') }
+    else {
+       document.getElementById('myDiv01').innerHTML = 
+        'So you are feeling ' + document.getElementById('myText01').value + '?'
+   }
+ }" > <br>
+
+<a href src="https://www.youtube.com/watch?v=6C6zVnGtuFg"></a> <br>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+<script>
+function myFunction() {
+    var str = "Click here for fun meme!";
+    var result = str.link("https://www.youtube.com/channel/UCYbRMh3beAQQRgLYtIp_U4A?");
+    document.getElementById("demo").innerHTML = result;
+}
+</script>
