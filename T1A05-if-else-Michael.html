@@ -6,17 +6,17 @@ Enter a number:
   myNumber = document.getElementById('myText01').value
   document.getElementById('myDiv01').innerHTML = ''
 
-  if (myNumber == 7)  {document.getElementById('myDiv01').innerHTML += 'You entered a 7<br>'}
+  if (myNumber == 7)  {document.getElementById('myDiv01').innerHTML += 'You entered a number<br>'}
 
   if (myNumber < 9)  {document.getElementById('myDiv01').innerHTML += 'Less than 9<br>'}
 
+  if (myNumber > 0)  {document.getElementById('myDiv01').innerHTML += 'This is a natural number<br>'}
+
+  if (myNumber < 0)  {document.getElementById('myDiv01').innerHTML += 'This is not a natural number<br>'}
+
+  if (myNumber == 0)  {document.getElementById('myDiv01').innerHTML += 'This is neither negative nor positive<br>'}
+
   if ( (myNumber < 3) || (myNumber > 20) ) {document.getElementById('myDiv01').innerHTML += 'Less than 3 or greater than 20<br>'}
-
-
-  if (myNumber > 9)  {document.getElementById('myDiv01').innerHTML += 'More than 9, less than 20<br>'}
-
-
-// get every if statement working
 
 }" >
 
