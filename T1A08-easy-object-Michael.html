@@ -1,19 +1,18 @@
-T1A08-easy-object-Michael.html
+<h2 align=center>T1A08-easy-object-Michael.html</h2>
 <script>
 
 function myOb(x){
-  this.myX=x*5;
+  this.myX = x*5;
    this.myFun=function(){
-    document.getEelemtById('myDiv').innerHTML = 
-    'The Property <b>this.myX</b> = '+this.myX +', but the passed variable<b>x</b>='+x
+    document.getElementById('myDiv').innerHTML = 
+    'The Property <b>this.myX</b> = '+ this.myX +', but the passed variable<b> x</b>='+x
   }
 }
 </script>
 
 <input type=button value=click onclick="{
-  myObject = new myOb(4)
+  myObject = new myOb(5)
   myObject.myFun()
 }">
 
-<div id="myDiv">damnit Chandler</div>
-  
+<div id="myDiv">Alrighty then</div>
