@@ -1,0 +1,109 @@
+
+
+<body onkeydown="{
+       document.getElementById('myDiv01')
+.innerHTML =  
+                'onkeydown event sent the letter '+String.fromCharCode(event.keyCode)
+ }">
+
+<h2 align=center>Events by Fred</h1>
+<ol>
+
+<li> Type a key
+
+<li><input type=button value="onClick" onclick="{
+
+    
+    document.getElementById('myDiv01')
+.innerHTML =  'onClick event activated'
+  }">
+
+<li><input type=button value="onMouseOver" onMouseOver="{
+
+    
+    document.getElementById('myDiv01')
+.innerHTML =  'onMouseOver event activated'
+  }">
+
+
+<p>When the input field gets focus, a function is triggered which changes the background-color.</p>
+
+<li><script>
+function myFunction() {
+    var x = document.getElementById("fname");
+    x.value = x.value.toUpperCase();
+}
+</script>
+<body>
+
+Enter your name: <input type="text" id="fname" onblur="myFunction()">
+
+<p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+
+<li><script>
+function message() {
+ //  alert("This alert box was triggered by the onreset event handler");
+}
+</script>
+</head>
+<body>
+
+<form onreset="message()">
+Enter your name: <input type="text" size="20">
+<input type="reset">
+</form>
+
+
+
+
+<li><script>
+function myFunction(x) {
+    x.style.background = "lightblue";
+}
+</script>
+
+Enter your name: <input type="text" onfocus="{
+
+    document.getElementById('myDiv01')
+.innerHTML =  'onFocus event activated'
+
+}">
+
+
+<li><body onunload="myFunction()">
+<input type=onunload value="Refresh page" onclick="{
+
+    
+    document.getElementById('myDiv02')
+.innerHTML =  'Page has been refreshed'
+  function myFunction() {
+    alert("Works");
+ }
+}">
+
+
+<li><input type="search" id="myInput" onsearch="myFunction()">
+<p id="demo"></p>
+
+<function myFunction() {
+   var x = document.getElementById("myInput");
+   document.getElementById("demo").innerHTML = "You are searching for:" + x.value;
+}>
+
+<li><body onresize="myFunction()">
+
+<p>Try to resize the browser window.</p>
+
+<script>
+function myFunction() {
+    alert("You have changed the size of the browser window!");
+}
+</script>
+
+
+
+
+<div id="myDiv01">...</div>
+
+<div id="myDiv02">...</div>
+
