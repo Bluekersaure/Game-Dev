@@ -1,0 +1,39 @@
+<h2 align=center>T1A09-Car-Michael</h2>
+
+<script>
+function myVehicle(mySpeed, myName, myImage){
+   this.myVehicleSpeed = mySpeed 
+   this.myVehicleName =myName
+   this.myVehicleImage = myImage
+   this.myShowInfo = function(){
+       document.getElementById('myDiv1').innerHTML += 'My name is ' + this.myVehicleName + '<br>'
+   };
+   this.myShowInfo = function(){
+       document.getElementById('myDiv1').innerHTML += 'My name is ' + this.myVehicleName + '<br>'
+   };
+
+}
+</script>
+ 
+
+<input type=button value="Set and Show Jason" onclick="{
+  myCar = new myVehicle(18,'Jason','http')
+  myCar.myShowInfo()
+}">
+
+
+<input type=button value=MoveRight onclick="{
+
+<img id="Car" src="IE-white-car-side-view.png"width=100> 
+<style="position:absolute;top=100;left:100;"<br>
+document.getElementById('Car').style.left='400px'
+
+ // alert('you make this work')
+
+
+}">
+
+
+<br/>
+
+<div id='myDiv1'>...<br></div>
