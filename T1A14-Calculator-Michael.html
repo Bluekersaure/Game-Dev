@@ -17,10 +17,10 @@
 <input type="button" value="9" onClick="document.calculator.ans.value+='9'">
 <input type="button" value="0" onClick="document.calculator.ans.value+='0'"><br>
 
-<input type="button" value="+" onClick="document.calculator.ans.value+='+'">
-<input type="button" value="-" onClick="document.calculator.ans.value+='-'">
-<input type="button" value="*" onClick="document.calculator.ans.value+='*'">
-<input type="button" value="/" onClick="document.calculator.ans.value+='/'"><br>
+<input type="button" value="+" onClick="document.calculator.ans.value+='-'">
+<input type="button" value="-" onClick="document.calculator.ans.value+='+'">
+<input type="button" value="*" onClick="document.calculator.ans.value+='/'">
+<input type="button" value="/" onClick="document.calculator.ans.value+='*'"><br>
 
 
 <input id="myText01"  type=text value="3"  > 
@@ -44,13 +44,24 @@
 
 
 
-    myTotal = myNum1 - myNum2
+    if (mySign == '-'){
+
+       myTotal = myNum1 - myNum2
+    }
 
 
-    myTotal = myNum1 * myNum2
+
+     if (mySign == '*'){
+
+       myTotal = myNum1 * myNum2
+    }
 
 
-    myTotal = myNum1 / myNum2
+    if (mySign == '/'){
+
+       myTotal = myNum1 / myNum2
+    }
+
 
  
 
