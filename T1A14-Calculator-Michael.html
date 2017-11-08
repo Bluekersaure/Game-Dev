@@ -1,13 +1,16 @@
 <h2 align=center>T1A14-Calculator-Michael</h2>
 <html>
-<form name="calculator" >
-<input type="button" value="1" onClick="document.calculator.ans.value+='1'">
+<form name="calculator">
+
+<body bgcolor= "od955">
+
+<input type="button" value="1" onClick="{document.getElementById('myText01').value += '1'}">
 <input type="button" value="2" onClick="document.calculator.ans.value+='2'">
 <input type="button" value="3" onClick="document.calculator.ans.value+='3'"><br>
 
 <input type="button" value="4" onClick="document.calculator.ans.value+='4'">
 <input type="button" value="5" onClick="document.calculator.ans.value+='5'">
-<input type="button" value="6" onClick="document.calculator.ans.value+='6'"><br
+<input type="button" value="6" onClick="document.calculator.ans.value+='6'"><br>
 
 <input type="button" value="7" onClick="document.calculator.ans.value+='7'">
 <input type="button" value="8" onClick="document.calculator.ans.value+='8'">
@@ -16,7 +19,7 @@
 
 <input type="button" value="+" onClick="document.calculator.ans.value+='+'">
 <input type="button" value="-" onClick="document.calculator.ans.value+='-'"><br>
- <input type="button" value="*" onClick="document.calculator.ans.value+='*'">
+<input type="button" value="*" onClick="document.calculator.ans.value+='*'">
 <input type="button" value="/" onClick="document.calculator.ans.value+='/'"><br>
 
 
@@ -27,29 +30,4 @@
 <input type=button value=" = " onClick="{  
     myNum1 = parseFloat(document.getElementById('myText01').value)
     mySign =  document.getElementById('myText02').value
-   myNum2 =parseFloat(document.getElementById('myText03').value)
-   
- // alert(parseFloat(document.getElementById('myText03').value))
-
-
-    myTotal = 0
-    myTotal = myNum1 + myNum2
-    myTotal = myNum1 - myNum2
-    myTotal = myNum1 * myNum2
-    myTotal = myNum1 / myNum2
-
-
-      document.getElementById('myDiv01').innerHTML +=  myNum1 + myNum2 + myTotal +'<br>'
-if (mySign == '+'){myTotal = myNum1 + myNum2 }
-if (mySign == '-'){myTotal = myNum1 - myNum2 }
-if (mySign == '*'){myTotal = myNum1 * myNum2 }
-if (mySign == '/'){myTotal = myNum1 / myNum2 }
-}" >
-
-
-<input type=button value="Clear Output" onClick="{  
-      document.getElementById('myDiv01').innerHTML =  '' 
-}" >
-
-<div id="myDiv01">....<br></div>
-</html>
+    myNum2 =parseFloat(document.getElementById('myText03').value)
