@@ -31,3 +31,35 @@
     myNum1 = parseFloat(document.getElementById('myText01').value)
     mySign =  document.getElementById('myText02').value
     myNum2 =parseFloat(document.getElementById('myText03').value)
+   
+ // alert(parseFloat(document.getElementById('myText03').value))
+
+
+    myTotal = 0
+
+    if (mySign == '+'){
+
+       myTotal = myNum1 + myNum2
+    }
+
+
+
+    myTotal = myNum1 - myNum2
+
+
+    myTotal = myNum1 * myNum2
+
+
+    myTotal = myNum1 / myNum2
+
+ 
+
+      document.getElementById('myDiv01').innerHTML =  myNum1 + ' ' + myTotal
+}">
+
+
+
+
+
+<div id="myDiv01">....<br></div>
+</html>
