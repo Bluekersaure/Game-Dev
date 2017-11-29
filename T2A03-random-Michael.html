@@ -2,20 +2,21 @@
 <input type=button value="Random Go" onclick="{
   myX=0
   myY=0
-  myCounter1 = setInterval(fucntion(){
-    myX = Math.floor(Math.random() * 6 -3)
-    myY = Math.floor(Math.random() * 6 -3)
+  myCounter1 = setInterval(function(){
+    myX = Math.floor(Math.random() * 30 -3)
+    myY = Math.floor(Math.random() * 10 -6)
          document.getElementById('myImage01').style.top =  parseInt(document.getElementById('myImage01').style.top) + myX +'px'
          document.getElementById('myImage01').style.left =  parseInt(document.getElementById('myImage01').style.left)  + myY +'px'
 
-  if(parseInt(document.getElementById('myImage01').style.left) <= 0 ){document.getElementById('myImage01').style.left = '50px'}
-  if(parseInt(document.getElementById('myImage01').style.top) <= 0 ){document.getElementById('myImage01').style.top = '50px'}
+  if(parseInt(document.getElementById('myImage01').style.left) <= 0 ){document.getElementById('myImage01').style.left = '500px'}
+  if(parseInt(document.getElementById('myImage01').style.top) <= 0 ){document.getElementById('myImage01').style.top = '400px'}
 
-},30); // every 1000 milliseconds
+},3000); // every 1000 milliseconds
 
 }">
 
 <img id="myImage01" src="pumpkin.png" style="position:absolute; width:325px; height:314px; left:800px; top:200px;"> 
+
 
 
    
