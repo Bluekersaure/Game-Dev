@@ -3,20 +3,21 @@
   myX=0
   myY=0
   myCounter1 = setInterval(function(){
-    myX = Math.floor(Math.random() * 30 -3)
-    myY = Math.floor(Math.random() * 10 -6)
+    myX = Math.floor(Math.random() * 10 -20)
+    myY = Math.floor(Math.random() * 30 -10)
          document.getElementById('myImage01').style.top =  parseInt(document.getElementById('myImage01').style.top) + myX +'px'
          document.getElementById('myImage01').style.left =  parseInt(document.getElementById('myImage01').style.left)  + myY +'px'
 
-  if(parseInt(document.getElementById('myImage01').style.left) <= 0 ){document.getElementById('myImage01').style.left = '500px'}
-  if(parseInt(document.getElementById('myImage01').style.top) <= 0 ){document.getElementById('myImage01').style.top = '400px'}
+  if(parseInt(document.getElementById('myImage01').style.left) <= 0 ){document.getElementById('myImage01').style.left = '30px'}
+  if(parseInt(document.getElementById('myImage01').style.top) <= 0 ){document.getElementById('myImage01').style.top = '30px'}
+  if(parseInt(document.getElementById('myImage01').style.left) >= 950 ){document.getElementById('myImage01').style.left = '950px'}
+  if(parseInt(document.getElementById('myImage01').style.top) >= 550 ){document.getElementById('myImage01').style.top = '550px'}
 
-},3000); // every 1000 milliseconds
+},100); // every 1000 milliseconds
 
 }">
 
-<img id="myImage01" src="pumpkin.png" style="position:absolute; width:325px; height:314px; left:800px; top:200px;"> 
-
+<img id="myImage01" src="pumpkin.png" style="position:absolute; width:325px; height:314px; left:400px; top:200px;"> 
 
 
    
