@@ -1,17 +1,11 @@
 <h2 align=center>Final Project</h2>
 
 <img id="myA" src="basketballspin.gif" draggable="true" ondragstart="drag(event)"
- style="position:absolute;width:120px; height:120px; left:100px; top:100px">
+ style="position:absolute;width:120px; height:120px; left:100px; top:200px">
 
 <img id="myB" src="net.png" style="position:absolute;width:332px; height:152px; left:900px; top:700px">
 
-<embed src="jackson 5.mp3"  loop="true" autostart="true" hidden="true" />
-
-<audio controls>
-  <source src="horse.ogg" type="audio/ogg">
- 
-Your browser does not support the audio element.
-</audio>
+embed src="Jackson 5.mp3"  loop="true" autostart="true" hidden="true" />
 
 <body style="background-color:black;">
 <body background="basketballbg.jpg">
@@ -19,14 +13,15 @@ Your browser does not support the audio element.
 <body text="pink">
 <h1>
 
-<body id="myBody" type="background" style="background-image: url('basketballbg.jpg'); background-repeat :  no-repeat;  ">
+<body id="myBody"  style="background-image: url('basketballbg.jpg'); background-repeat :  no-repeat;  ">
+
+
 
 <input type=button value="Background Go" onclick="{
- //  alert('hello')
        myX = 0
        myY = 0
        myCounter1 = setInterval(function(){   
-      `       myX += -2;
+             myX += -2;
              myY += 0;
              document.getElementById('myBody').style.backgroundPosition = myX + 'px '+ myY+'px';
 
@@ -35,12 +30,10 @@ Your browser does not support the audio element.
 }">
 
 <input type=button value="Background Stop" onclick="{
-  clearInterval(myCounter1)
+  clearInterval( myCounter1 )
  // alert('Background stopped at position ' +document.getElementById('myBody').style.backgroundPosition)
 
 }">
-
-
 
 <script>
 
@@ -58,10 +51,11 @@ function myCollide(my1, my2){
        return true
    }
 }
-
 </script>
 
-
+var = 0;
+var CollisionHasOccured = false;
+var message = "nice";
 
 <body onkeydown="{   
 
@@ -90,8 +84,10 @@ document.getElementById('myOut02').innerHTML = String.fromCharCode(event.keyCode
 + ' ,  '+ document.getElementById('myB').style.left
 
   if (myCollide('myA', 'myB')  == true) {
-       document.getElementById('myOut03').innerHTML =  'Goal!'
-           
+       document.getElementById('myOut02').innerHTML =  'You hit me!'
+              document.getElementById('myB').style.left  = Math.floor(Math.random()*1000 -300)+ 'px'
+              document.getElementById('myB').style.top  = Math.floor(Math.random()*1000 -300)+ 'px'
+
 
 
 
@@ -115,14 +111,15 @@ document.getElementById('myOut02').innerHTML = String.fromCharCode(event.keyCode
          document.getElementById('myB').style.left =  parseInt(document.getElementById('myB').style.left) + 20 +'px'
    }
 
-  
+
+   
   document.getElementById('myOut01').innerHTML = document.getElementById('myA').style.left 
 + ' ,  '+ document.getElementById('myB').style.left
 
   if (myCollide('myA', 'myB')  == true) {
-       document.getElementById('myOut03').innerHTML =  'Goal!'
-           document.getElementById('myB').style.left  = Math.floor(Math.random()*900 -600)+ 'px'
-              document.getElementById('myB').style.top  = Math.floor(Math.random()*900 -600)+ 'px'
+       document.getElementById('myOut02').innerHTML =  'You hit me!'
+           document.getElementById('myB').style.left  = Math.floor(Math.random()*1000 -300)+ 'px'
+              document.getElementById('myB').style.top  = Math.floor(Math.random()*1000 -300)+ 'px'
 }
 
 }">
